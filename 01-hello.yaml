@@ -1,0 +1,34 @@
+# !!!! indentation is important !!
+
+
+#key value pairs
+"apple" : "This is a fruit "
+1 : "My roll number"
+
+---
+#identifies separation between documents 
+
+# Lists
+-apple
+-mango
+-banana
+-grapes
+
+---
+
+cities :
+ -islamabad
+ -peshawar
+ -quetta
+ -mardan
+
+ ---
+ cities : [karachi , islamabad , lahore ,peshawar]
+
+ ---
+
+ {mango: "yellow fruit","delicious" }
+
+ ... 
+ #documnet finished here :
+

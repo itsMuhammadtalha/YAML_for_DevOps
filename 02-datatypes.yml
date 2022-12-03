@@ -1,0 +1,70 @@
+#datatypes
+
+#String variable 
+name: Muhammad Talha
+fruit: "apple"
+job: 'swe'
+
+# bio: hey my name is Muhammad Talha.
+# i am a nice dude 
+#will give you an error bcZ it doesnot recognize the new line items 
+
+bio: |
+hey my name is Muhammad Talha. 
+i am a nice dude.
+
+#writing a single line in multiple lines 
+message: >
+this line will 
+be treated as 
+one line  
+
+#the above message is same as
+message: this line will be treated as one line  
+
+
+number: 676
+marks: 98.54
+booleanValue: No #n , N ,false, False
+exponentialValue: 6.023E56 #raise to the pwr 56
+
+#specify the type
+zero: !!int 0
+positiveNumber: !!int 45
+negativeNumber: !!int -45
+binaryNumber: !!int 0b1101
+octalNumber: !!int 0x5
+commaValue: !!int +540_000
+booleanValue2: !!bool Yes
+
+#floatingpoint number 
+marks: !!float 586
+infinit: !!float .inf
+not a number: .nan
+
+#null
+surname: !!null Null  #null or Null or ~
+
+#null key in key value pair
+~: this is a null key
+
+#arrays
+
+cities :
+ -islamabad
+ -peshawar
+ -quetta
+ -mardan
+
+ country : [pakistan , India , Iran ,afghanistan ]
+
+#dates and time 
+#datatypes for data and time is timestamp
+#REFERENCE: https://yaml.org/type/timestamp.html
+date: !!timestamp 2002-12-14
+datentime: !!timestamp   2001-12-15T02:59:43.1Z
+
+
+
+
+

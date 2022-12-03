@@ -1,0 +1,30 @@
+
+<!-- 
+    xml : extensive markup language 
+    xml is not readable by the humans so we have to provide some version and encoding of the character
+
+    Now we have a sample data and we want to represent the it in xml file which is basically serialization
+
+    we have a school. the school has the following attributes "name" "princial" "and students"
+
+    the students further have the following attributes "name" "roll no" "marks"
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<school name = "XYZ" principal="someone">
+
+    <students>
+        <student>
+            <rollno>23</rollno>
+            <name>"Muhammad "</name>
+            <marks> 98 </marks>
+        </student>
+    </students>
+
+    
+</school>
+
+
+
+

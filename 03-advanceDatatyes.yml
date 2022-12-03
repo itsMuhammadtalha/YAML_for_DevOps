@@ -1,0 +1,98 @@
+
+student: !!seq
+ -marks
+ -name 
+ -roll_no
+
+# we can write it like this also
+
+student: [marks, name, roll_no]
+
+#some the keys of the sequence can be empty this is called
+#sparce sequence
+
+ - hey
+ - how
+ -
+ - Null
+ -abc
+
+ #nested sequence
+
+ -marks
+  -23
+  -24
+  -25
+ -roll_no
+ -name
+
+
+ # maps : key value pairs are called maps 
+
+ !!map 
+
+ #nested maps
+
+ name: Muhammad Talha 
+ role: 
+  age: 78
+  job: student
+
+#same as 
+
+name : Muhammad Talha
+role: {age: 78, job: student}
+
+#pairs: keys may have duplicate values 
+# !!pairs
+
+pair example: !!pairs
+ - job: student
+ - job: teacher
+# this will be stored as an array of hash tables 
+
+#same as above 
+pair example: !!pairs [job: student, job: teacher]
+
+
+#unique values : !!set
+#if i want only unique names 
+names: !!set
+ ? talha
+ ? owais
+ ? naseer
+ ? naseer
+
+# dictionary : !!omap
+people: !!omap
+ - Talha: 
+    fullname: Muhammad Talha
+    age: 18
+    job: student
+ - Mehru:
+    fullname: Mehrunisa
+    age: 1
+    job: writing code  
+
+#reusing some properties using anchors 
+#anchor means what do you want to copy and where you want to copy
+likings: &likes
+  fav fruit: mango
+  disklikes: grapes
+
+Person1:
+  name : Muhammad Talha
+  <<: *likes
+
+Person2:
+  name : Gul Khan
+  <<: *likes
+  disklikes: apple #we can also overwrite stuff 
+  
+
+
+
+
+
+
+

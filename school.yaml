@@ -1,0 +1,8 @@
+school:
+- name: ABC
+  principal: someone
+  student:
+  - name: MUhammad Talha
+    rollno: '23'
+  - name: " Talha Khan"
+    rollno: '67'
