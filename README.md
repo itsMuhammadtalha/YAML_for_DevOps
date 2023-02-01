@@ -18,5 +18,5 @@ Video Resources : https://www.youtube.com/watch?v=IA90BTozdow&t=2980s
                   
                   https://www.youtube.com/watch?v=1uFVr15xDGg
                   
-
-Complete Blog for YAML tutorial Comming Soon on https://taycan.hashnode.dev/
+# Blog / Notes 
+Complete Blog for YAML tutorial : https://taycan.hashnode.dev/complete-yaml-tutorial-basic-to-advance
